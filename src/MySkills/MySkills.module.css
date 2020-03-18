@@ -1,0 +1,82 @@
+.mySkills
+{
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+
+    background-color: #252527;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+    width: 80%;
+    padding: 80px 0;
+}
+.headerTitle
+{
+    composes: titleText from '../index.css';
+}
+.titleLine
+{
+    width: 55px;
+    height: 1px;
+    margin: 30px 0;
+
+    background-color: #ffb339;
+}
+
+.skillsBlock
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.skill
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 300px;
+}
+
+.icon
+{
+    width: 80px;
+    height: 80px;
+
+    background-color: grey;
+}
+
+@media screen and (max-width: 1128px )
+{
+    .skillsBlock
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1128px )
+{
+    .skill
+    {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 628px )
+{
+    .skill
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,61 @@
+.footer
+{
+    display: flex;
+    justify-content: center;
+
+    height: 300px;
+
+    background-color: #16a5ff;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+    width: 80%;
+    padding: 80px 0;
+
+}
+
+.title
+{
+    composes: titleText from '../index.css';
+
+}
+
+.iconsBlock
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: 500px;
+
+    border: 1px solid;
+}
+
+.icon
+{
+    width: 50px;
+    height: 50px;
+
+    background-color: grey;
+}
+
+
+@media screen and (max-width: 612px )
+{
+    .iconsBlock
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 340px )
+{
+    .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+}
